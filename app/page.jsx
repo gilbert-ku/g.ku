@@ -2,11 +2,15 @@
 
 import Image from "next/image";
 import { TypeAnimation } from 'react-type-animation';
+import { FaGithub, FaLinkedinIn, FaTwitter, FaWhatsapp } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+
+
 
 export default function Home() {
   return (
     // <main className=" home-pg flex min-h-screen flex-col items-center justify-between" >
-    <main className="home-pg  min-h-screen "> 
+    <main className="home-pg  min-h-screen text-white"> 
       <div className="md:flex justify-evenly my-12">
         <div className=" w-1/2">
           <h1>Hello, My Name is,</h1>
@@ -26,6 +30,14 @@ export default function Home() {
           </p>
 
           <button className="p-2 bg-light-blue-600 rounded-md font-semibold">Download Resume</button>
+
+          <div className="flex text-blue-500">
+          <FaGithub className="me-3 text-2xl text-blue-500"/>
+          <FaLinkedinIn className="mx-3 text-2xl"/>
+          <FaTwitter className="mx-3 text-2xl"/>
+          <FaWhatsapp className="mx-3 text-2xl"/>
+          <MdEmail className="ms-3 text-2xl"/>
+          </div>
 
         </div>
         <Image 
