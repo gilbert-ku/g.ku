@@ -11,9 +11,9 @@ export default function Home() {
   return (
     // <main className=" home-pg flex min-h-screen flex-col items-center justify-between" >
     <main className="home-pg  min-h-screen text-white"> 
-      <div className="md:flex justify-evenly my-12">
-        <div className=" w-1/2">
-          <h1 className="text-2xl">Hello, My Name is,</h1>
+      <div className="lg:flex justify-evenly my-4 md:my-12">
+        <div className="px-5 md:px-8 lg:px-24 lg:w-1/2">
+          <h1 className="text-xl md:text-2xl">Hello, My Name is,</h1>
 
           <h1 className="text-2xl md:text-6xl font-bold">Gilbert <span className="text-light-blue-400" >Kutoto,</span></h1>
 
@@ -31,22 +31,22 @@ export default function Home() {
             ]}
             speed={40}
             // style={{ fontSize: '2em' }}
-            className="md:text-4xl my-2"
+            className="text-xl md:text-4xl my-0 md:my-2"
             repeat={Infinity}
           />
 
-          <p className="text-2xl my-5">From Nairobi Kenya,I have a rich experience in development cycle form dynamic Web Application, 
+          <p className="text-xl md:text-2xl my-2 md:my-5">From Nairobi Kenya,I have a rich experience in development cycle form dynamic Web Application, 
             Mobile App development and I am also proficient in UX/UI design.
           </p>
 
           <button className="p-2 bg-light-blue-600 rounded-md font-semibold my-5 px-5">Download Resume</button>
 
           <div className="flex text-blue-500">
-          <FaGithub className="me-3 text-2xl text-blue-500"/>
-          <FaLinkedinIn className="mx-3 text-2xl"/>
-          <FaTwitter className="mx-3 text-2xl"/>
-          <FaWhatsapp className="mx-3 text-2xl"/>
-          <MdEmail className="ms-3 text-2xl"/>
+            <FaGithub className="me-3 text-2xl text-blue-500"/>
+            <FaLinkedinIn className="mx-3 text-2xl"/>
+            <FaTwitter className="mx-3 text-2xl"/>
+            <FaWhatsapp className="mx-3 text-2xl"/>
+            <MdEmail className="ms-3 text-2xl"/>
           </div>
 
         </div>
@@ -55,8 +55,7 @@ export default function Home() {
         width={500}
         height={500}
         alt="profile image"
-        // className="mt-96"/
-        
+        className="px-5 md:pr-0 md:mx-auto mt-5"
         />
       </div>
     </main>
