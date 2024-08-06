@@ -34,11 +34,11 @@ export default function Home() {
                 ]}
                 speed={40}
                 // style={{ fontSize: '2em' }}
-                className="text-xl md:text-4xl my-0 md:my-2"
+                className="text-xl md:text-2xl my-0 md:my-2"
                 repeat={Infinity}
               />
 
-              <p className="text-xl md:text-2xl my-2 md:my-5">From Nairobi Kenya,I have a rich experience in development cycle form dynamic Web Application, 
+              <p className="lg:text-2xl my-2 lg:my-5">From Nairobi Kenya,I have a rich experience in development cycle form dynamic Web Application, 
                 Mobile App development and I am also proficient in UX/UI design.
               </p>
 
@@ -49,7 +49,7 @@ export default function Home() {
                 <FaLinkedinIn className="mx-2 md:mx-3 text-2xl md:text-3xl"/>
                 <FaTwitter className="mx-2 md:mx-3 text-2xl md:text-3xl"/>
                 <FaWhatsapp className="mx-2 md:mx-3 text-2xl md:text-3xl"/>
-                <MdEmail className="ms-2 md:ms-3 text-2xl md:text-3xl"/>
+                <MdEmail className="ms-2 md:ms-3 text-2xl md:text-3xl "/>
               </div>
 
             </div>
@@ -58,7 +58,7 @@ export default function Home() {
             width={450}
             height={450}
             alt="profile image"
-            className="px-5 md:pr-0 mt-5 lg:mt-0 "
+            className="px-5 md:pr-0 mt-5 lg:mt-0 items-center"
             loading="lazy"
             />
         </div>
