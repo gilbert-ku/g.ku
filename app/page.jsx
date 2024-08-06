@@ -5,6 +5,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { FaGithub, FaLinkedinIn, FaTwitter, FaWhatsapp } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import About from "@/components/about/About";
+import Skills from "@/components/skills/Skills";
 
 
 
@@ -65,6 +66,8 @@ export default function Home() {
         
       </main>
       <About />
+
+      <Skills />
     </>
   );
 }
