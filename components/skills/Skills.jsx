@@ -118,17 +118,61 @@ const Skills = () => {
                     <p className='md:text-xl'>Bootstrap CSS</p>
                 </div>
             </div>
-            <div className="bg-gray-800 p-4 h-32" >
-                <p>Python</p>
+
+            <div className="bg-gray-900 p-4 h-32 flex justify-center items-center rounded-xl" >
+                <div>
+                    <Image
+                    src="/python.png"
+                    width={30}
+                    height={30}
+                    alt="python logo"
+                    className="mx-auto"
+                    loading="lazy"
+                    />
+                    <p className='md:text-xl'>Python</p>
+                </div>
             </div>
-            <div className="bg-gray-800 p-4 h-32" >
-                <p>Django</p>
+
+            <div className="bg-gray-900 p-4 h-32 flex justify-center items-center rounded-xl" >
+                <div>
+                    <Image
+                    src="/django.png"
+                    width={55}
+                    height={30}
+                    alt="Django logo"
+                    className="mx-auto"
+                    loading="lazy"
+                    />
+                    <p className='md:text-xl'>Django</p>
+                </div>
             </div>
-            <div className="bg-gray-800 p-4 h-32" >
-                <p>Flask</p>
+
+            <div className="bg-gray-900 p-4 h-32 flex justify-center items-center rounded-xl" >
+                <div>
+                    <Image
+                    src="/flask.png"
+                    width={45}
+                    height={30}
+                    alt="flask logo"
+                    className="mx-auto"
+                    loading="lazy"
+                    />
+                    <p className='md:text-xl'>Flask</p>
+                </div>
             </div>
-            <div className="bg-gray-800 p-4 h-32" >
-                <p>MySQL</p>
+
+            <div className="bg-gray-900 p-4 h-32 flex justify-center items-center rounded-xl" >
+                <div>
+                    <Image
+                    src="/mysql.png"
+                    width={30}
+                    height={60}
+                    alt="mysql logo"
+                    className="mx-auto"
+                    loading="lazy"
+                    />
+                    <p className='md:text-xl'>MySQL</p>
+                </div>
             </div>
         </div>
     </div>
