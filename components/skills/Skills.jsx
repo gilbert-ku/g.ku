@@ -63,17 +63,60 @@ const Skills = () => {
                     <p className='md:text-xl'>NextJs</p>
                 </div>
             </div>
-            <div className="bg-gray-800 p-4 h-32" >
-                <p>Dart</p>
+
+            <div className="bg-gray-900 p-4 h-32 flex justify-center items-center rounded-xl" >
+                <div>
+                    <Image
+                    src="/dart.png"
+                    width={40}
+                    height={40}
+                    alt="dart logo"
+                    className="mx-auto"
+                    loading="lazy"
+                    />
+                    <p className='md:text-xl'>Dart</p>
+                </div>
             </div>
-            <div className="bg-gray-800 p-4 h-32" >
-                <p>Flutter</p>
+
+            <div className="bg-gray-900 p-4 h-32 flex justify-center items-center rounded-xl" >
+                <div>
+                    <Image
+                    src="/flutter.png"
+                    width={30}
+                    height={30}
+                    alt="flutter js logo"
+                    className="mx-auto"
+                    loading="lazy"
+                    />
+                    <p className='md:text-xl'>Flutter</p>
+                </div>
             </div>
-            <div className="bg-gray-800 p-4 h-32" >
-                <p>Tailwind</p>
+
+            <div className="bg-gray-900 p-4 h-32 flex justify-center items-center rounded-xl" >
+                <div>
+                    <Image
+                    src="/tailwind.png"
+                    width={40}
+                    height={40}
+                    alt="tailwind js logo"
+                    className="mx-auto"
+                    loading="lazy"
+                    />
+                    <p className='md:text-xl'>Tailwind CSS</p>
+                </div>
             </div>
-            <div className="bg-gray-800 p-4 h-32" >
-                <p>BootStrap</p>
+            <div className="bg-gray-900 p-4 h-32 flex justify-center items-center rounded-xl" >
+                <div>
+                    <Image
+                    src="/bootstrap.png"
+                    width={40}
+                    height={40}
+                    alt="bootstrap logo"
+                    className="mx-auto"
+                    loading="lazy"
+                    />
+                    <p className='md:text-xl'>Bootstrap CSS</p>
+                </div>
             </div>
             <div className="bg-gray-800 p-4 h-32" >
                 <p>Python</p>
