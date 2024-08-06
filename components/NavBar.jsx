@@ -174,9 +174,10 @@ import {
             {/* <Button fullWidth variant="text" size="sm" className="">
               <span>Log In</span>
             </Button> */}
-            <Button fullWidth variant="gradient" size="sm" className="">
+            <Button fullWidth variant="gradient" size="sm" className="bg-gradient-to-r from-cyan-300 to-light-blue-600">
               <span>Hire Me</span>
             </Button>
+            {/* <Button className="bg-gradient-to-r from-cyan-300 to-light-blue-600">Hire Me</Button> */}
           </div>
         </Collapse>
       </Navbar>
