@@ -1,7 +1,10 @@
 import React from 'react'
-import { MdDesignServices } from "react-icons/md";
+import { MdDesignServices, MdPayment } from "react-icons/md";
 import { TbWorldWww } from "react-icons/tb";
 import { CiMobile3 } from "react-icons/ci";
+import { AiFillApi } from "react-icons/ai";
+import { SiCodementor } from "react-icons/si";
+
 
 
 const Services = () => {
@@ -34,6 +37,29 @@ const Services = () => {
           <CiMobile3 className='items-center text-3xl text-light-blue-600 mx-auto'/>
           <h1 className='font-semibold text-xl py-3'>APP DEVELOPMENT</h1>
           <p className='px-5'>Cutting-Edge Android and iOS Mobile Applications to Expand Your Marketing Reach.</p>
+        </div>
+
+        {/* api */}
+        <div className='text-center bg-gray-900 p-5 rounded-lg border-double border-4 border-light-blue-600'>
+          <AiFillApi className='items-center text-3xl text-light-blue-600 mx-auto'/>
+          <h1 className='font-semibold text-xl py-3'>API DESIGN/INTEGRATION</h1>
+          <p className='px-5'>Developing a highly secure, fast and salable REST APIs.</p>
+        </div>
+
+        {/* payment */}
+
+        <div className='text-center bg-gray-900 p-5 rounded-lg border-double border-4 border-light-blue-600'>
+          <MdPayment className='items-center text-3xl text-light-blue-600 mx-auto'/>
+          <h1 className='font-semibold text-xl py-3'>PAYMENT INTEGRATION</h1>
+          <p className='px-5'>Automate the process of payments to allow users to pay right in your platform.</p>
+        </div>
+
+        {/* open source */}
+
+        <div className='text-center bg-gray-900 p-5 rounded-lg border-double border-4 border-light-blue-600'>
+          <SiCodementor className='items-center text-3xl text-light-blue-600 mx-auto'/>
+          <h1 className='font-semibold text-xl py-3'>OPEN SOURCE/MENTORSHIP</h1>
+          <p className='px-5'>Eager to contribute to open-source projects while learning and sharing my expertise.</p>
         </div>
 
       </div>
