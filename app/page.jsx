@@ -6,6 +6,7 @@ import { FaGithub, FaLinkedinIn, FaTwitter, FaWhatsapp } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import About from "@/components/about/About";
 import Skills from "@/components/skills/Skills";
+import Services from "@/components/services/Services";
 
 
 
@@ -65,9 +66,11 @@ export default function Home() {
         </div>
         
       </main>
-      <About />
+      {/* <About /> */}
 
-      <Skills />
+      {/* <Skills /> */}
+
+      <Services />
     </>
   );
 }
