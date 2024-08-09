@@ -7,6 +7,7 @@ import { MdEmail } from "react-icons/md";
 import About from "@/components/about/About";
 import Skills from "@/components/skills/Skills";
 import Services from "@/components/services/Services";
+import Projects from "@/components/projects/Projects";
 
 
 
@@ -66,11 +67,12 @@ export default function Home() {
         </div>
         
       </main>
-      <About />
+      {/* <About /> */}
 
-      <Skills />
+      {/* <Skills /> */}
 
-      <Services />
+      {/* <Services /> */}
+      <Projects />
     </>
   );
 }
