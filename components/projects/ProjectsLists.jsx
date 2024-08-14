@@ -1,12 +1,15 @@
 
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
+import { FaExternalLinkAlt } from "react-icons/fa";
+
 
 const getProjects = async () => {
     try {
       const res = await fetch('http://127.0.0.1:8000/api/Projects/', {
         // next: {
-        //     revalidate:0
+        //     revalidate:24
         // }
       });
       if (!res.ok) {
@@ -32,16 +35,21 @@ const ProjectsLists = async () => {
       <section className="text-white">
         <h1>Projects lists</h1>
         {projects.map((project) => (
-          <div key={project.uuid} className="text-white">
-            <h1>{project.title}</h1>
+          <div key={project.uuid} className="text-white mx-5 lg:mx-0 lg:flex my-5">
             <Image 
             src={`http://127.0.0.1:8000${project.image}`}
             width={500}
             height={400}
-            alt='real estate'
+            alt={project.title}
             />
-            <p>{project.desctiption}</p>
-            <a href={project.url_link}> Link</a>
+            <div className='md:ml-5 lg:ml-10 my-auto md:pr-5 lg:pr-3'>
+              <h1 className='text-xl md:text-2xl text-light-blue-600 font-semibold mb-5'>{project.title}</h1>
+              <p className='md:text-xl lg:text-2xl'>{project.desctiption}</p>
+              <div className='mt-3 md:mt-5 lg:mt-9 p-3 bg-blue-gray-900 w-full md:w-16 h-full md:h-16 rounded-full flex justify-center items-center align-bottom'>
+                <h1 className='pr-4 my-auto font-serif font-bold text-xl text-light-blue-600 md:hidden'>go live</h1>
+                <Link href={project.url_link} target='_blank' className='text-light-blue-600 text-xl md:text-2xl font-semibold md:font-bold'> <FaExternalLinkAlt /></Link>
+              </div>
+            </div>
           </div>
         ))}
       </section>
