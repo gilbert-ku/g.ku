@@ -1,6 +1,6 @@
 
-import React from 'react'
-import { ProjectsLists } from './ProjectsLists'
+
+import ProjectsLists  from './ProjectsLists'
 
 const Projects = () => {
   return (

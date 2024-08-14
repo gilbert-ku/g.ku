@@ -1,4 +1,4 @@
-"use client"
+// "use client"
 
 import Image from "next/image";
 import { TypeAnimation } from 'react-type-animation';
@@ -15,7 +15,7 @@ export default function Home() {
   return (
     // <main className=" home-pg flex min-h-screen flex-col items-center justify-between" >
     <>
-      <main className="home-pg flex justify-center items-center min-h-screen text-white"> 
+      {/* <main className="home-pg flex justify-center items-center min-h-screen text-white"> 
         
         <div className="lg:flex justify-evenly my-4 md:my-12">
             <div className="px-5 md:px-8 lg:px-24 lg:w-1/2">
@@ -66,12 +66,12 @@ export default function Home() {
             />
         </div>
         
-      </main>
-      {/* <About /> */}
+      </main> */}
+      {/* <About />
 
-      {/* <Skills /> */}
+      <Skills />
 
-      {/* <Services /> */}
+      <Services /> */}
       <Projects />
     </>
   );
