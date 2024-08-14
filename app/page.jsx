@@ -67,11 +67,11 @@ export default function Home() {
         </div>
         
       </main> */}
-      {/* <About />
+      <About />
 
       <Skills />
 
-      <Services /> */}
+      <Services />
       <Projects />
     </>
   );

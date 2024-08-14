@@ -43,7 +43,7 @@ const ProjectsLists = async () => {
             alt={project.title}
             />
             <div className='md:ml-5 lg:ml-10 my-auto md:pr-5 lg:pr-3'>
-              <h1 className='text-xl md:text-2xl text-light-blue-600 font-semibold mb-5'>{project.title}</h1>
+              <h1 className='text-xl md:text-2xl text-light-blue-600 font-semibold mb-2 md:mb-5'>{project.title}</h1>
               <p className='md:text-xl lg:text-2xl'>{project.desctiption}</p>
               <button className='mt-3 md:mt-5 lg:mt-9 p-3 bg-blue-gray-900 w-full md:w-16 h-full md:h-16 rounded-full flex justify-center items-center align-bottom'>
                 {/* <h1 className='pr-4 my-auto font-serif font-bold text-xl text-light-blue-600 md:hidden'>go live</h1> */}
