@@ -6,7 +6,7 @@ function About() {
   return (
     <>
         <section className='flex justify-center items-center'>
-            <div className=' lg:flex  justify-evenly'>
+            <div className=' lg:flex  justify-evenly' id='About'>
 
                 {/* image */}
                 <Image 

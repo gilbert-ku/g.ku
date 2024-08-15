@@ -6,7 +6,7 @@ import { MdNavigateNext } from "react-icons/md";
 const Projects = () => {
   return (
     <>
-      <div className='text-white container mx-auto mt-5 md:mt-12'>
+      <div className='text-white container mx-auto mt-5 md:mt-12' id='Projects'>
         <h1 className=' mx-5 text-center text-xl md:text-2xl lg:text-3xl my-5 font-semibold'>
           Latest Works 
           <br />

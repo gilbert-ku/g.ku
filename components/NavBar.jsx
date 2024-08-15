@@ -1,7 +1,9 @@
 "use client"
 import React from "react";
 import { useEffect, useState } from "react";
+import { Link as ScrollLink } from "react-scroll";
 import Image from "next/image";
+import Link from "next/link";
 
 
 import {
@@ -31,9 +33,9 @@ import {
         color="white"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <Link href="/" className="flex items-center">
           Home
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -41,9 +43,14 @@ import {
         color="white"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <ScrollLink to="About" 
+        spy={true}
+        smooth={true}
+        offset={50}
+        duration={500}
+        className="flex items-center">
           About 
-        </a>
+        </ScrollLink>
       </Typography>
 
       <Typography
@@ -52,9 +59,15 @@ import {
         color="white"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <ScrollLink 
+          to="Skills" 
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+          className="flex items-center">
           Skills
-        </a>
+        </ScrollLink>
       </Typography>
 
       <Typography
@@ -63,9 +76,15 @@ import {
         color="white"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <ScrollLink 
+          to="Services" 
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        className="flex items-center">
           Services
-        </a>
+        </ScrollLink>
       </Typography>
       <Typography
         as="li"
@@ -73,9 +92,15 @@ import {
         color="white"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <ScrollLink 
+          to="Projects" 
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+          className="flex items-center">
           Projects
-        </a>
+        </ScrollLink>
       </Typography>
 
       <Typography
@@ -84,9 +109,9 @@ import {
         color="white"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <Link href="blogs" className="flex items-center">
           Blogs
-        </a>
+        </Link>
       </Typography>
     </ul>
   );
@@ -119,13 +144,22 @@ import {
               >
                 <span>Log In</span>
               </Button> */}
-              <Button
-                variant="gradient"
-                size="sm"
-                className="hidden lg:inline-block"
+              <ScrollLink
+              to="Contacts" 
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
               >
-                <span>Hire Me</span>
-              </Button>
+                <Button
+                  variant="gradient"
+                  size="sm"
+                  className="hidden lg:inline-block"
+                >
+                  <span>Hire Me</span>
+                </Button>
+              </ScrollLink>
+              
             </div>
             <IconButton
               variant="text"

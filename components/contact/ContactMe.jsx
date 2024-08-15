@@ -5,7 +5,7 @@ import Form from "./Form";
 
 const ContactMe = () => {
   return (
-    <section className='mx-5 md:mx-12 lg:mx-24 bg-gray-900 rounded-lg text-white mt-10 p-5 lg:flex justify-between items-center'>
+    <section className='mx-5 md:mx-12 lg:mx-24 bg-gray-900 rounded-lg text-white mt-10 p-5 lg:flex justify-between items-center' id="Contacts">
       <div className="lg:w-1/3 py-5">
         <h1 className="font-serif text-2xl pb-2 lg:pb-5">Get in Touch.</h1>
         <h1 className="font-serif text-3xl font-semibold pb-2 lg:pb-5">Let’s Talk About Your <span className="text-light-blue-600">Next Project</span></h1>
