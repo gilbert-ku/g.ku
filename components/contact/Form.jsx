@@ -8,7 +8,7 @@ const Form = () => {
       <Image 
         src="/Vector.png"
         layout="fill"
-        objectFit="contain"
+        // objectFit="contain"
         alt="background image"
         className="object-contain"
       />  

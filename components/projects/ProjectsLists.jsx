@@ -9,7 +9,7 @@ const getProjects = async () => {
     try {
       const res = await fetch('http://127.0.0.1:8000/api/Projects/', {
         // next: {
-        //     revalidate:24
+        //     revalidate:0
         // }
       });
       if (!res.ok) {

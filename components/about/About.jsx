@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { IoCloudDoneSharp } from "react-icons/io5";
 
-function About() {
+const About = () => {
   return (
     <>
         <section className='flex justify-center items-center'>
