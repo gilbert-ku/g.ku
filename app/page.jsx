@@ -1,11 +1,13 @@
 
-import About from "@/components/about/About";
-import Skills from "@/components/skills/Skills";
-import ServicesOffered from "@/components/servicesOffered/Services";
-import Projects from "@/components/projects/Projects";
-import HomePage from "@/components/home/HomePage";
-import ContactMe from "@/components/contact/ContactMe";
-import Footer  from "@/components/footer/Footer";
+import dynamic from 'next/dynamic';
+const HomePage = dynamic(() => import("@/components/home/HomePage"));
+const About = dynamic(() => import("@/components/about/About"));
+const Skills = dynamic(() => import("@/components/skills/Skills"));
+const ServicesOffered = dynamic(() => import("@/components/servicesOffered/Services"));
+const Projects = dynamic(() => import("@/components/projects/Projects"));
+const ContactMe = dynamic(() => import("@/components/contact/ContactMe"));
+const Footer = dynamic(() => import("@/components/footer/Footer"));
+
 
 
 const Home= () => {

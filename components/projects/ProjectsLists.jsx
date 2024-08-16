@@ -40,6 +40,8 @@ const ProjectsLists = async () => {
             src={`http://127.0.0.1:8000${project.image}`}
             width={500}
             height={400}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            loading='lazy'
             alt={project.title}
             />
             <div className='md:ml-5 lg:ml-10 my-auto md:pr-5 lg:pr-3'>
