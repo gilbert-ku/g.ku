@@ -38,7 +38,7 @@ const BlogList =  async() => {
     if (Array.isArray(blogs) && blogs.length > 0 ){
        return (
             <>
-                <section className="text-white grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-x-11  gap-y-5 mt-3 mx-5 md:mx-12 lg:mx-24">
+                <section className="text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-11  gap-y-5 mt-3 mx-5 md:mx-12 lg:mx-24">
                     {
                         blogs.map((blog) => (
                             
