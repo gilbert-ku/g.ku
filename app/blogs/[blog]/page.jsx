@@ -1,13 +1,19 @@
 "use client"
 
-import { useRouter } from "next/router"
 
-const Blog = () => {
+import { useParams } from 'next/navigation';
 
-  
+
+const BlogDetails = () => {
+  const { blog } = useParams();
+
+  console.log(blog);
   return (
-    <div>Blog</div>
-  )
+    <div className='text-8xl text-white'>
+      BlogDetails
+    </div>
+  );
 }
 
-export default Blog
+export default BlogDetails;
+

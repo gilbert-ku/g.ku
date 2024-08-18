@@ -1,4 +1,5 @@
 import Image from "next/image";
+// import ButtonLink from "./ButtonLink";
 import Link from 'next/link';
 
 
@@ -64,9 +65,13 @@ const BlogList =  async() => {
                                     {/* <p>date {blog.user}</p> */}
                                 </div>
 
-                                <Link href={`/blog/${blog.uuid}`}>
+                                <Link href={`/blogs/${blog.uuid}`}>
                                     Read more
                                 </Link>
+
+                                
+
+                                {/* <ButtonLink blog={blog} /> */}
                             </div>
                         ))
                     }
