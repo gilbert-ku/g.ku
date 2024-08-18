@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from 'next/link';
+
 
 
 const getBlogs = async () => {
@@ -55,12 +57,16 @@ const BlogList =  async() => {
                                     />
                                 </div>
                                 
-                                <div className=' my-auto md:pr-5 lg:pr-3'>
+                                <div className=' my-auto pe-2'>
                                     <h1 className='text-xl md:text-2xl text-light-blue-600 font-semibold mb-2 md:mb-5'>{blog.title}</h1>
                                     <p className='md:text-xl lg:text-2xl'>{blog.blog_text.slice(0, 200)}...</p>
                                     <p>date {blog.created_date}</p>
                                     {/* <p>date {blog.user}</p> */}
                                 </div>
+
+                                <Link href={`/blog/${blog.uuid}`}>
+                                    Read more
+                                </Link>
                             </div>
                         ))
                     }

@@ -1,6 +1,10 @@
-import React from 'react'
+"use client"
+
+import { useRouter } from "next/router"
 
 const Blog = () => {
+
+  
   return (
     <div>Blog</div>
   )
