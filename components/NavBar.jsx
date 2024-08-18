@@ -26,12 +26,12 @@ import {
   }, []);
  
   const navList = (
-    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 border border-light-blue-600 p-2 rounded-3xl">
       <Typography
         as="li"
         variant="small"
         color="white"
-        className="p-1 font-normal"
+        className="p-3 font-semibold text-xl  active:bg-blue-gray-500  rounded-3xl"
       >
         <Link href="/" className="flex items-center">
           Home
@@ -41,7 +41,7 @@ import {
         as="li"
         variant="small"
         color="white"
-        className="p-1 font-normal"
+        className="p-3 font-semibold text-xl active:bg-blue-gray-500  rounded-3xl"
       >
         <ScrollLink to="About" 
         spy={true}
@@ -57,7 +57,7 @@ import {
         as="li"
         variant="small"
         color="white"
-        className="p-1 font-normal"
+        className="p-1 font-semibold text-xl"
       >
         <ScrollLink 
           to="Skills" 
@@ -74,7 +74,7 @@ import {
         as="li"
         variant="small"
         color="white"
-        className="p-1 font-normal"
+        className="p-1 font-semibold text-xl"
       >
         <ScrollLink 
           to="Services" 
@@ -90,7 +90,7 @@ import {
         as="li"
         variant="small"
         color="white"
-        className="p-1 font-normal"
+        className="p-1 font-semibold text-xl"
       >
         <ScrollLink 
           to="Projects" 
@@ -107,7 +107,7 @@ import {
         as="li"
         variant="small"
         color="white"
-        className="p-1 font-normal"
+        className="p-1 font-semibold text-xl"
       >
         <Link href="blogs" className="flex items-center">
           Blogs
