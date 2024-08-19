@@ -8,7 +8,7 @@ const getBlogs = async () => {
     try{
         const res = await fetch("http://127.0.0.1:8000/api/Blogs/", {
             next: {
-                revalidate:0
+                revalidate:3600
             }
         });
         if (!res.ok) {
