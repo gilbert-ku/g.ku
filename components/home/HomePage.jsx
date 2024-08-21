@@ -7,40 +7,40 @@ import Image from "next/image";
 const HomePage = () => {
   return (
     // <main className='min-h-screen bg-no-repeat object-scale-down object-center bg-center bg-contain' style={{backgroundImage: `url("/gilbert.png")`,}}>
-    <main className='h-screen relative '>
+    <main className='min-h-screen relative '>
 
         <Image 
           src="/top.png"
-          height={100}
-          width={100}
+          height={200}
+          width={200}
           loading="lazy"
           alt="Gilbert Kutoto"
-          // className="absolute top-"
+          className="absolute top-0 left-0 "
           />
 
-          <Image 
+          {/* <Image 
           src="/bottom.png"
           height={100}
           width={100}
           loading="lazy"
           alt="Gilbert Kutoto"
           className="absolute bottom-0 right-0"
-          />
+          /> */}
 
 
       {/* freelancer */}
-      <div className=" md:flex justify-around items-center ">
-        <div className='text-white'>
-          <GoArrowDownRight className="text-2xl my-5 text-light-blue-600"/>
-          <h1 className="text-4xl my-5">Freelancer</h1>
-          <p className="text-6xl my-5">Software Engineer<span className="text-light-blue-600">.</span></p>
+      <div className=" lg:flex justify-around items-center ">
+        <div className='text-white flex flex-col items-center justify-center md:block'>
+          <GoArrowDownRight className="text-3xl my-5 text-light-blue-600 font-semibold"/>
+          <h1 className="text-2xl md:text-4xl mb-5">Freelancer</h1>
+          <p className="text-3xl md:text-6xl mb-5">Software Engineer<span className="text-light-blue-600">.</span></p>
 
-          <button className="py-2 px-8 bg-light-blue-600 rounded-xl">Download Resume</button>
+          <button className="py-2 px-8 bg-light-blue-600 rounded-xl font-semibold">Download Resume</button>
         </div> 
 
         {/* image */}
 
-        <div className="flex flex-col items-center justify-center ">
+        <div className="flex flex-col items-center justify-center">
           <Image 
           src="/gilbert.png"
           height={500}
@@ -49,11 +49,11 @@ const HomePage = () => {
           alt="Gilbert Kutoto"
           className="mx-auto"
           />
-           <h1 className="text-8xl text-white font-extrabold mx-auto mt-7">Gilbert Kutoto</h1>
+           <h1 className="text-2xl md:text-6xl lg:text-8xl text-white font-extrabold mx-auto mt-7">Gilbert Kutoto</h1>
 
            {/* icon */}
 
-           <div className="flex justify-center md:justify-start mx-auto">
+           <div className="flex justify-center md:justify-start mx-auto mt-3 md:mt-6">
             <div className="flex text-blue-500 mt-1 md:mt-3">
               <FaGithub className="me-2 md:me-3 text-2xl text-blue-500"/>
               <FaLinkedinIn className="mx-2 md:mx-3 text-2xl md:text-3xl"/>
@@ -67,30 +67,30 @@ const HomePage = () => {
 
         {/* what i do */}
 
-        <div className="flex flex-col items-center justify-center ">
+        <div className="hidden md:flex md:flex-wrap md:flex-col items-center justify-center ">
           {/* design */}
           <div className="flex flex-col items-center my-6">
             <Image 
               src="/design.png"
-              height={100}
+              height={200}
               width={110}
               loading="lazy"
               alt="Design"
               className="mx-auto"
             />
-            <h1 className="text-2xl text-white font-extrabold mx-auto">Designer</h1>
+            <h1 className="md:text-2xl text-white font-extrabold mx-auto">Designer</h1>
           </div>
           {/* web */}
           <div className="flex flex-col items-center my-6">
             <Image 
               src="/web.png"
-              height={100}
+              height={80}
               width={100}
               loading="lazy"
               alt="Web tech"
               className="mx-auto"
             />
-            <h1 className="text-2xl text-white font-extrabold mx-auto">Web Developer</h1>
+            <h1 className="md:text-2xl text-white font-extrabold mx-auto">Web Developer</h1>
           </div>
           {/* mobile */}
           <div className="flex flex-col items-center my-6">
@@ -102,7 +102,7 @@ const HomePage = () => {
               alt="Mobile tech"
               className="mx-auto"
             />
-            <h1 className="text-2xl text-white font-extrabold">Android/IOS Developer</h1>
+            <h1 className="md:text-2xl text-white font-extrabold">Android/IOS Developer</h1>
           </div>
         </div>
 
