@@ -1,39 +1,111 @@
 "use client"
 import { GoArrowDownRight } from "react-icons/go";
+import { FaGithub, FaLinkedinIn, FaTwitter, FaWhatsapp } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 import Image from "next/image";
 
 const HomePage = () => {
   return (
     // <main className='min-h-screen bg-no-repeat object-scale-down object-center bg-center bg-contain' style={{backgroundImage: `url("/gilbert.png")`,}}>
-    <main className='min-h-screen'>
+    <main className='h-screen relative '>
+
+        <Image 
+          src="/top.png"
+          height={100}
+          width={100}
+          loading="lazy"
+          alt="Gilbert Kutoto"
+          // className="absolute top-"
+          />
+
+          <Image 
+          src="/bottom.png"
+          height={100}
+          width={100}
+          loading="lazy"
+          alt="Gilbert Kutoto"
+          className="absolute bottom-0 right-0"
+          />
+
 
       {/* freelancer */}
-      <div>
+      <div className=" md:flex justify-around items-center ">
         <div className='text-white'>
-          <GoArrowDownRight className="text-2xl text-light-blue-600"/>
-          <h1 className="text-4xl">Freelancer</h1>
-          <p className="text-6xl">Software Engineer<span className="text-light-blue-600">.</span></p>
+          <GoArrowDownRight className="text-2xl my-5 text-light-blue-600"/>
+          <h1 className="text-4xl my-5">Freelancer</h1>
+          <p className="text-6xl my-5">Software Engineer<span className="text-light-blue-600">.</span></p>
 
           <button className="py-2 px-8 bg-light-blue-600 rounded-xl">Download Resume</button>
         </div> 
 
         {/* image */}
-        <div>
+
+        <div className="flex flex-col items-center justify-center ">
           <Image 
           src="/gilbert.png"
           height={500}
           width={400}
           loading="lazy"
           alt="Gilbert Kutoto"
+          className="mx-auto"
           />
-           <h1 className="text-8xl text-white font-extrabold">Gilbert Kutoto</h1>
+           <h1 className="text-8xl text-white font-extrabold mx-auto mt-7">Gilbert Kutoto</h1>
+
+           {/* icon */}
+
+           <div className="flex justify-center md:justify-start mx-auto">
+            <div className="flex text-blue-500 mt-1 md:mt-3">
+              <FaGithub className="me-2 md:me-3 text-2xl text-blue-500"/>
+              <FaLinkedinIn className="mx-2 md:mx-3 text-2xl md:text-3xl"/>
+              <FaTwitter className="mx-2 md:mx-3 text-2xl md:text-3xl"/>
+              <FaWhatsapp className="mx-2 md:mx-3 text-2xl md:text-3xl"/>
+              <MdEmail className="ms-2 md:ms-3 text-2xl md:text-3xl "/>
+            </div>
+          </div>
+
         </div>
 
         {/* what i do */}
 
-        <div>
-          
+        <div className="flex flex-col items-center justify-center ">
+          {/* design */}
+          <div className="flex flex-col items-center my-6">
+            <Image 
+              src="/design.png"
+              height={100}
+              width={110}
+              loading="lazy"
+              alt="Design"
+              className="mx-auto"
+            />
+            <h1 className="text-2xl text-white font-extrabold mx-auto">Designer</h1>
+          </div>
+          {/* web */}
+          <div className="flex flex-col items-center my-6">
+            <Image 
+              src="/web.png"
+              height={100}
+              width={100}
+              loading="lazy"
+              alt="Web tech"
+              className="mx-auto"
+            />
+            <h1 className="text-2xl text-white font-extrabold mx-auto">Web Developer</h1>
+          </div>
+          {/* mobile */}
+          <div className="flex flex-col items-center my-6">
+            <Image 
+              src="/mobile.png"
+              height={100}
+              width={100}
+              loading="lazy"
+              alt="Mobile tech"
+              className="mx-auto"
+            />
+            <h1 className="text-2xl text-white font-extrabold">Android/IOS Developer</h1>
+          </div>
         </div>
+
       </div>
       
     </main>
