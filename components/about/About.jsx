@@ -5,7 +5,7 @@ import { IoCloudDoneSharp } from "react-icons/io5";
 const About = () => {
   return (
     <>
-        <section className='flex justify-center items-center'>
+        <section className='flex justify-center items-center mt-10 md:mt-0'>
             <div className=' lg:flex  justify-evenly' id='About'>
 
                 {/* image */}
@@ -19,9 +19,9 @@ const About = () => {
                 />
 
                 {/* content div */}
-                <div className=' text-white lg:w-1/2 mx-5 lg:pl-20'>
+                <div className=' text-white lg:w-1/2 mx-5 lg:pl-20 '>
                     <h1 className='text-xl md:text-2xl font-semibold text-center lg:text-start'>About Me</h1>
-                    <p className='text-xl md:text-2xl font-semibold'>
+                    <p className='text-xl text-center md:text-left md:text-2xl font-semibold'>
                         Self <span className='text-light-blue-400'>Driven, Innovative</span> 
                         <br />
                         Software <span className='text-light-blue-400'>Engineer.</span>
