@@ -9,7 +9,6 @@ const Blogs = () => {
               <span className='text-light-blue-600 text-4'>.</span>
           </h1>
         </div>
-
         <BlogList />
     </>
   )
