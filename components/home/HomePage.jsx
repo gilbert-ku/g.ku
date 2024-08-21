@@ -46,7 +46,7 @@ const HomePage = () => {
             className="mx-auto"
             
           />
-          <h1 className="text-2xl md:text-6xl lg:text-8xl text-white font-extrabold mx-auto mt-7">
+          <h1 className="text-3xl md:text-6xl lg:text-8xl text-white font-extrabold mx-auto mt-7">
             Gilbert Kutoto
           </h1>
 
