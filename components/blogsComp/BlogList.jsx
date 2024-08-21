@@ -56,7 +56,7 @@ const BlogList =  async() => {
                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                     loading='lazy'
                                     alt={blog.title}
-                                    className="object-scale-down w-full md:h-72 object-center rounded-2xl md:px-5"
+                                    className="object-scale-down w-full md:h-72 object-center rounded-2xl "
                                     />
                                 </div>
                                 
