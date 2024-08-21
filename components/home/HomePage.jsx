@@ -29,7 +29,7 @@ const HomePage = () => {
 
 
       {/* freelancer */}
-      <div className=" lg:flex justify-around items-center ">
+      <div className=" lg:flex justify-around items-center">
         <div className='text-white flex flex-col items-center justify-center md:block'>
           <GoArrowDownRight className="text-3xl my-5 text-light-blue-600 font-semibold"/>
           <h1 className="text-2xl md:text-4xl mb-5">Freelancer</h1>
