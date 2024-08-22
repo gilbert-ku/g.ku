@@ -7,7 +7,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 const getProjects = async () => {
     try {
-      const res = await fetch('http://127.0.0.1:8000/api/Projects/', {
+      const res = await fetch('https://portfolio-backend-1kqj.onrender.com/api/Projects/', {
         // next: {
         //     revalidate:0
         // }
@@ -37,7 +37,7 @@ const ProjectsLists = async () => {
         {projects.map((project) => (
           <div key={project.uuid} className="text-white mx-5 lg:mx-0 lg:flex my-5">
             <Image 
-            src={`http://127.0.0.1:8000${project.image}`}
+            src={`https://portfolio-backend-1kqj.onrender.com${project.image}`}
             width={500}
             height={400}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
