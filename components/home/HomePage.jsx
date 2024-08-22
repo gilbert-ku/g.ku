@@ -3,6 +3,7 @@ import { GoArrowDownRight } from "react-icons/go";
 import { FaGithub, FaLinkedinIn, FaTwitter, FaWhatsapp } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import Image from "next/image";
+import Link from "next/link";
 
 const HomePage = () => {
   return (
@@ -52,12 +53,23 @@ const HomePage = () => {
 
           {/* Social Media Icons */}
           <div className="flex justify-center md:justify-start mx-auto mt-3 md:mt-6">
-            <div className="flex text-blue-500 mt-1 md:mt-3">
-              <FaGithub className="mx-2 text-2xl md:text-3xl" aria-label="GitHub" />
+            <div className="flex  mt-1 md:mt-3">
+              <Link href="https://github.com/gilbert-ku" target="_blank" className="text-light-blue-600 hover:text-white hover:-translate-y-1 hover:scale-110 duration-300"> 
+                <FaGithub className="mx-2 text-2xl md:text-3xl" aria-label="GitHub" />
+              </Link>
+                <Link href="https://www.linkedin.com/in/gilbert-kutoto/" target="_blank" className="text-light-blue-600 hover:text-white hover:-translate-y-1 hover:scale-110 duration-300"> 
               <FaLinkedinIn className="mx-2 text-2xl md:text-3xl" aria-label="LinkedIn" />
-              <FaTwitter className="mx-2 text-2xl md:text-3xl" aria-label="Twitter" />
-              <FaWhatsapp className="mx-2 text-2xl md:text-3xl" aria-label="WhatsApp" />
-              <MdEmail className="mx-2 text-2xl md:text-3xl" aria-label="Email" />
+              </Link>
+              <Link href="https://x.com/gilbert45dope/" target="_blank" className="text-light-blue-600 hover:text-white hover:-translate-y-1 hover:scale-110 duration-300"> 
+                <FaTwitter className="mx-2 text-2xl md:text-3xl" aria-label="Twitter" />
+              </Link>
+              <Link href="https://wa.me/phonenumber?text=Hi%20Gilbert!%20I%20came%20across%20your%20portfolio%20and%20was%20really%20impressed.%20I'd%20love%20to%20connect%20and%20learn%20more%20about%20your%20work!" target="_blank" className="text-light-blue-600 hover:text-white hover:-translate-y-1 hover:scale-110 duration-300"> 
+                <FaWhatsapp className="mx-2 text-2xl md:text-3xl" aria-label="WhatsApp" />
+              </Link>
+              <Link href="mailto: gilbert45ku@gmail.com" target="_blank" className="text-light-blue-600 hover:text-white hover:-translate-y-1 hover:scale-110 duration-300"> 
+                <MdEmail className="mx-2 text-2xl md:text-3xl" aria-label="Email" />
+              </Link>
+              
             </div>
           </div>
         </div>
