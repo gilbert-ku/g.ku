@@ -52,7 +52,12 @@ const BlogDetails = () => {
             />
       </div>
       <div className='border-l-2 border-light-blue-600 ms-12 px-5'>
-        <p className='md:text-xl  md:ms-12'>{blogData.blog_text}</p>
+        <p className='md:text-xl  md:ms-12'>
+          {blogData.blog_text}
+        </p>
+
+        {/* <div>{blogData.blog_body}</div> */}
+        <div dangerouslySetInnerHTML={{ __html: blogData.blog_body }} />
       </div>
       </div>
     </section>
@@ -61,3 +66,5 @@ const BlogDetails = () => {
 };
 
 export default BlogDetails;
+
+
