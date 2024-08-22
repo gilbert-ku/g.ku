@@ -33,25 +33,38 @@ const BlogDetails = () => {
 
   return (
     <>
-    <div className='text-white'>
-      <Image 
-        src={`http://127.0.0.1:8000${blogData.image}`}
-        width={500}
-        height={200}
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        loading='lazy'
-        alt={blog.title}
-        className="object-scale-down w-full md:h-72 object-center"
-        />
-      <h1>{blogData.title}</h1>
-      <p>{blogData.blog_text}</p>
-      {/* You can also render other details like date, image, etc. */}
-      <p>Created on: {new Date(blogData.date).toLocaleDateString()}</p>
-    </div>
+    <section className='container mx-auto text-xl flex flex-col justify-center items-center'>
+      <div className='text-white'>
+
+      <h1 className='text:2xl md:text-5xl my-7 text-center md:text-left block font-serif font-extrabold underline underline-offset-8 md:mr-24 px-4'>{blogData.title}.</h1>
+
+      <h1 className='my-5'><em className='text-light-blue-600 font-semibold px-5 text-center md:text-left'>By Gilbert Kutoto <span className='text-white'>// {new Date(blogData.date).toLocaleDateString()}</span></em></h1>
       
-      {/* <img src={blogData.image} alt={blogData.title} /> */}
+      <div className=' border-none md:border border-light-blue-600 md:h-96 md:w-4/5 relative my-7'>
+        <Image 
+            src={`http://127.0.0.1:8000${blogData.image}`}
+            width={500}
+            height={100}
+            // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            loading='lazy'
+            alt={blogData.title}
+            className="object-fill  w-full object-center md:h-96 md:w-full md:absolute bottom-4 left-4 px-5 md:px-2"
+            />
+      </div>
+      <div className='border-l-2 border-light-blue-600 ms-12 px-5'>
+        <p className='md:text-xl  md:ms-12'>
+          {blogData.blog_text}
+        </p>
+
+        {/* <div>{blogData.blog_body}</div> */}
+        <div dangerouslySetInnerHTML={{ __html: blogData.blog_body }} />
+      </div>
+      </div>
+    </section>
     </>
   );
 };
 
 export default BlogDetails;
+
+

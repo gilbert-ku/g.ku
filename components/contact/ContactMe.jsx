@@ -1,7 +1,10 @@
 
 import { FaGithub, FaLinkedinIn, FaTwitter, FaWhatsapp } from "react-icons/fa6";
 import { MdCall, MdOutlineMarkAsUnread } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
+
 import Form from "./Form";
+import Link from "next/link";
 
 const ContactMe = () => {
   return (
@@ -18,13 +21,27 @@ const ContactMe = () => {
           <span className="pr-5 text-3xl"><MdOutlineMarkAsUnread/></span>Email: gilbert45ku@gmail.com
         </h1>
 
-        {/* Social Icons */}
-        <div className="flex text-blue-500 mt-4 md:mt-8 space-x-3">
-          <FaGithub className="text-2xl md:text-3xl"/>
-          <FaLinkedinIn className="text-2xl md:text-3xl"/>
-          <FaTwitter className="text-2xl md:text-3xl"/>
-          <FaWhatsapp className="text-2xl md:text-3xl"/>
-        </div>
+        {/* Social Media Icons */}
+        <div className="flex justify-center md:justify-start mx-auto mt-3 md:mt-6">
+            <div className="flex  mt-1 md:mt-3">
+              <Link href="https://github.com/gilbert-ku" target="_blank" className="text-light-blue-600 hover:text-white hover:-translate-y-1 hover:scale-110 duration-300"> 
+                <FaGithub className="mx-2 text-2xl md:text-3xl" aria-label="GitHub" />
+              </Link>
+                <Link href="https://www.linkedin.com/in/gilbert-kutoto/" target="_blank" className="text-light-blue-600 hover:text-white hover:-translate-y-1 hover:scale-110 duration-300"> 
+              <FaLinkedinIn className="mx-2 text-2xl md:text-3xl" aria-label="LinkedIn" />
+              </Link>
+              <Link href="https://x.com/gilbert45dope/" target="_blank" className="text-light-blue-600 hover:text-white hover:-translate-y-1 hover:scale-110 duration-300"> 
+                <FaTwitter className="mx-2 text-2xl md:text-3xl" aria-label="Twitter" />
+              </Link>
+              <Link href="https://wa.me/phonenumber?text=Hi%20Gilbert!%20I%20came%20across%20your%20portfolio%20and%20was%20really%20impressed.%20I'd%20love%20to%20connect%20and%20learn%20more%20about%20your%20work!" target="_blank" className="text-light-blue-600 hover:text-white hover:-translate-y-1 hover:scale-110 duration-300"> 
+                <FaWhatsapp className="mx-2 text-2xl md:text-3xl" aria-label="WhatsApp" />
+              </Link>
+              <Link href="mailto: gilbert45ku@gmail.com" target="_blank" className="text-light-blue-600 hover:text-white hover:-translate-y-1 hover:scale-110 duration-300"> 
+                <MdEmail className="mx-2 text-2xl md:text-3xl" aria-label="Email" />
+              </Link>
+              
+            </div>
+          </div>
       </div>
       <div className="lg:w-2/3 mt-5 lg:mt-0">
         <Form />

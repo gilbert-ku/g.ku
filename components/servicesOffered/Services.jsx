@@ -9,8 +9,8 @@ const Services = () => {
   return (
     <>
     <div className='container mx-auto mt-5' id='Services'>
-      <div className='text-white'>
-        <h1 className='text-center text-xl md:text-2xl font-semibold mx-5'>
+      <div className='text-white my-3 md:my-8'>
+        <h1 className='text-center text-xl md:text-5xl font-semibold mx-5'>
           My <span className='text-light-blue-600'>Special Services</span> For your Personal and <br />Business <span className='text-light-blue-600'>Development.</span>
         </h1>
       </div>
