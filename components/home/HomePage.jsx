@@ -21,10 +21,10 @@ const HomePage = () => {
       />
 
       {/* Freelancer Section */}
-      <div className="lg:flex md:flex-row justify-evenly items-center min-w-full">
+      <div className="lg:flex lg:flex-row justify-evenly items-center min-w-full">
         
         {/* Text Section */}
-        <div className="text-white flex flex-col items-center justify-center md:block md:mx-5 md:ml-14 w-full md:w-1/3">
+        <div className="text-white flex flex-col items-center justify-center md:block md:mx-5 md:ml-14 w-full lg:w-1/3">
           <GoArrowDownRight className="text-3xl my-5 text-light-blue-600 font-semibold" aria-label="Arrow Icon" />
           <h1 className="text-2xl md:text-4xl mb-5">Freelancer</h1>
           <p className="text-3xl md:text-2xl lg:text-5xl mb-5">
@@ -36,7 +36,7 @@ const HomePage = () => {
         </div>
 
         {/* Image Section */}
-        <div className="flex flex-col items-center justify-center w-full md:w-1/3">
+        <div className="flex flex-col items-center justify-center w-full lg:w-1/3">
           <Image
             src="/gilbert.png"
             height={500}
@@ -46,7 +46,7 @@ const HomePage = () => {
             className="px-5 md:px-0 md:mx-auto"
             
           />
-          <h1 className="text-2xl md:text-3xl lg:text-5xl text-white font-extrabold mx-auto mt-7">
+          <h1 className="text-2xl md:text-5xl lg:text-8xl text-white font-extrabold mx-auto mt-7">
             Gilbert Kutoto
           </h1>
 
@@ -74,7 +74,7 @@ const HomePage = () => {
         </div>
 
         {/* What I Do Section */}
-        <div className="flex justify-around lg:flex-col items-center lg:justify-center w-full md:w-1/3">
+        <div className=" hidden md:flex justify-around lg:flex-col items-center lg:justify-center w-full lg:w-1/3">
           
           {/* Designer */}
           <div className="flex flex-col items-center my-6">
