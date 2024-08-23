@@ -24,7 +24,7 @@ const HomePage = () => {
       <div className="lg:flex lg:flex-row justify-evenly items-center min-w-full">
         
         {/* Text Section */}
-        <div className="text-white flex flex-col items-center justify-center md:block md:mx-5 md:ml-14 w-full lg:w-1/3">
+        <div className="text-white flex flex-col items-center justify-center md:block md:mx-5 md:ml-14 w-full md:w-1/3">
           <GoArrowDownRight className="text-3xl my-5 text-light-blue-600 font-semibold" aria-label="Arrow Icon" />
           <h1 className="text-2xl md:text-4xl mb-5">Freelancer</h1>
           <p className="text-3xl md:text-2xl lg:text-5xl mb-5">
@@ -43,7 +43,7 @@ const HomePage = () => {
             width={400}
             loading="lazy"
             alt="Gilbert Kutoto"
-            className="px-5 md:px-0 md:mx-auto"
+            className="px-5 md:px-0 md:mx-auto mt-24 md:my-4"
             
           />
           <h1 className="text-2xl md:text-5xl lg:text-8xl text-white font-extrabold mx-auto mt-7">
