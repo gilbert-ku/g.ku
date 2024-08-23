@@ -7,8 +7,7 @@ import Link from "next/link";
 
 const HomePage = () => {
   return (
-    // <main className='min-h-screen bg-no-repeat object-scale-down object-center bg-center bg-contain' style={{backgroundImage: `url("/gilbert.png")`,}}>
-    <main className="min-h-screen relative">
+    <main className="min-h-screen lg:flex w-full justify-center items-center ">
 
       {/* Background Image (Top Left) */}
       <Image
@@ -22,32 +21,32 @@ const HomePage = () => {
       />
 
       {/* Freelancer Section */}
-      <div className="lg:flex justify-around items-center">
+      <div className="lg:flex md:flex-row justify-evenly items-center min-w-full">
         
         {/* Text Section */}
-        <div className="text-white flex flex-col items-center justify-center md:block">
+        <div className="text-white flex flex-col items-center justify-center md:block md:mx-5 md:ml-14 w-full md:w-1/3">
           <GoArrowDownRight className="text-3xl my-5 text-light-blue-600 font-semibold" aria-label="Arrow Icon" />
           <h1 className="text-2xl md:text-4xl mb-5">Freelancer</h1>
-          <p className="text-3xl md:text-6xl mb-5">
+          <p className="text-3xl md:text-2xl lg:text-5xl mb-5">
             Software Engineer<span className="text-light-blue-600">.</span>
           </p>
-          <button className="py-2 px-8 bg-light-blue-600 rounded-xl font-semibold">
+          <button className="py-2 px-5 md:px-8 bg-light-blue-600 rounded-xl font-semibold">
             Download Resume
           </button>
         </div>
 
         {/* Image Section */}
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center w-full md:w-1/3">
           <Image
             src="/gilbert.png"
             height={500}
             width={400}
             loading="lazy"
             alt="Gilbert Kutoto"
-            className="mx-auto"
+            className="px-5 md:px-0 md:mx-auto"
             
           />
-          <h1 className="text-3xl md:text-6xl lg:text-8xl text-white font-extrabold mx-auto mt-7">
+          <h1 className="text-2xl md:text-3xl lg:text-5xl text-white font-extrabold mx-auto mt-7">
             Gilbert Kutoto
           </h1>
 
@@ -75,7 +74,7 @@ const HomePage = () => {
         </div>
 
         {/* What I Do Section */}
-        <div className="hidden md:flex md:flex-col items-center justify-center">
+        <div className="flex justify-around lg:flex-col items-center lg:justify-center w-full md:w-1/3">
           
           {/* Designer */}
           <div className="flex flex-col items-center my-6">

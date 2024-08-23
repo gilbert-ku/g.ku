@@ -5,16 +5,16 @@ import { IoCloudDoneSharp } from "react-icons/io5";
 const About = () => {
   return (
     <>
-        <section className='flex justify-center items-center mt-10 md:mt-0 md:mb-24'>
+        <section className='flex justify-center items-center  md:mt-0 md:mb-24'>
             <div className=' lg:flex  justify-evenly' id='About'>
 
                 {/* image */}
                 <Image 
                     src="/about-image.png"
-                    width={300}
+                    width={400}
                     height={300}
                     alt="profile image"
-                    className="px-5 md:pr-0 mt-5 lg:mt-0 hidden lg:block lg:ml-12 w-auto h-auto"
+                    className="px-5 md:pr-0 mt-5 lg:mt-0 hidden lg:block lg:ml-12 "
                     loading="lazy"
                 />
 
