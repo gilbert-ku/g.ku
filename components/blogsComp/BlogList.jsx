@@ -8,7 +8,7 @@ import { GrLinkNext } from "react-icons/gr";
 
 const getBlogs = async () => {
     try{
-        const res = await fetch("http://127.0.0.1:8000/api/Blogs/", {
+        const res = await fetch("https://portfolio-backend-1kqj.onrender.com/api/Blogs/", {
             next: {
                 revalidate:3600
             }
@@ -50,7 +50,7 @@ const BlogList =  async() => {
                             <div key={blog.uuid} className="text-white rounded-xl px-2 py-1">
                                 <div className="">
                                     <Image 
-                                    src={`http://127.0.0.1:8000${blog.image}`}
+                                    src={`https://portfolio-backend-1kqj.onrender.com${blog.image}`}
                                     width={500}
                                     height={200}
                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -82,7 +82,7 @@ const BlogList =  async() => {
             </>
         ) 
     } else {
-        return <p className=" text-center p-24 text-8xl text-white">Invalid data: {JSON.stringify(blogs)}</p>;
+        return <p className=" text-center p-24 text-8xl text-white">Sorry there is no data: {JSON.stringify(blogs)}</p>;
     }
 }
 

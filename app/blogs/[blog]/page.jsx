@@ -15,7 +15,7 @@ const BlogDetails = () => {
 
     const fetchBlog = async () => {
       try {
-        const response = await fetch(`http://127.0.0.1:8000/api/Blog/${blog}`);
+        const response = await fetch(`https://portfolio-backend-1kqj.onrender.com/api/Blog/${blog}`);
         if (!response.ok) throw new Error(`Error: ${response.statusText}`);
 
         const data = await response.json();
@@ -38,11 +38,11 @@ const BlogDetails = () => {
 
       <h1 className='text:2xl md:text-5xl my-7 text-center md:text-left block font-serif font-extrabold underline underline-offset-8 md:mr-24 px-4'>{blogData.title}.</h1>
 
-      <h1 className='my-5'><em className='text-light-blue-600 font-semibold px-5 text-center md:text-left'>By Gilbert Kutoto <span className='text-white'>// {new Date(blogData.date).toLocaleDateString()}</span></em></h1>
+      <h1 className='my-5'><em className='text-light-blue-600 font-semibold px-5 text-center md:text-left'>By Gilbert Kutoto <span className='text-white'> : {new Date(blogData.date).toLocaleDateString()}</span></em></h1>
       
       <div className=' border-none md:border border-light-blue-600 md:h-96 md:w-4/5 relative my-7'>
         <Image 
-            src={`http://127.0.0.1:8000${blogData.image}`}
+            src={`https://portfolio-backend-1kqj.onrender.com${blogData.image}`}
             width={500}
             height={100}
             // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
