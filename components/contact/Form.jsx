@@ -1,9 +1,34 @@
 "use client"
 import Image from "next/image";
+import { useState } from "react";
 
 const Form = () => {
+
+  const [formData, setFormData] = useState({
+    full_name: "",
+    phone: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+
+  // handle changes
+  const handleChange = (event) => {
+    const {name, value} = event.target
+    setFormData (prevFormData => {
+      return {
+        ...prevFormData,
+        [name] : value
+      }
+    })
+  }
+
+  // hand submit
+  
   return (
     <section className='relative w-full h-[450px] lg:h-[350px]'>
+
       {/* Image as Background */}
       <Image 
         src="/Vector.png"
@@ -11,7 +36,7 @@ const Form = () => {
         // objectFit="contain"
         alt="background image"
         className="object-contain"
-      />  
+      /> 
       
       {/* Form positioned on top of the image */}
       <form className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center  ">
@@ -25,6 +50,8 @@ const Form = () => {
               placeholder="Full Name" 
               required
               name='name'
+              value={formData.full_name}
+              onChange={handleChange}
             />
           </div>
           <div className="w-full lg:w-1/2 px-3">
@@ -34,6 +61,8 @@ const Form = () => {
               placeholder="Enter Phone No"
               required
               name='phone'
+              value={formData.phone}
+              onChange={handleChange}
             />
           </div>
         </div>
@@ -46,6 +75,8 @@ const Form = () => {
               placeholder="Enter Email Address" 
               required
               name='email'
+              value={formData.email}
+              onChange={handleChange}
             />
           </div>
           <div className="w-full lg:w-1/2 px-3">
@@ -55,6 +86,8 @@ const Form = () => {
               placeholder="Subject"
               required
               name='subject'
+              value={formData.subject}
+              onChange={handleChange}
             />
           </div>
         </div>
@@ -67,6 +100,8 @@ const Form = () => {
             placeholder="Leave a Message..." 
             required
             name='message'
+            value={formData.message}
+            onChange={handleChange}
           />
         </div>
         <div className='flex justify-center w-full px-3'>
