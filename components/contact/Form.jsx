@@ -15,18 +15,28 @@ const Form = () => {
       
       {/* Form positioned on top of the image */}
       <form className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center  ">
-        {/* Name */}
+        
+        {/* name and Phone */}
         <div className="flex flex-wrap mb-6 w-full max-w-lg">
-          <div className="w-full px-3">
+          <div className="w-full lg:w-1/2 px-3 mb-6 lg:mb-0">
             <input 
-              className="appearance-none block w-full text-white bg-white bg-opacity-25 border border-light-blue-500 rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:bg-opacity-50 focus:border-blue-500" 
+              className="appearance-none block w-full text-white bg-white bg-opacity-25 border border-light-blue-600 rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:bg-opacity-50 focus:border-blue-500"  
               type="text" 
               placeholder="Full Name" 
-              name="full_name"
               required
+              name='name'
             />
           </div>
-        </div>  
+          <div className="w-full lg:w-1/2 px-3">
+            <input 
+              className="appearance-none block w-full text-white bg-white bg-opacity-25 border border-light-blue-600 rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:bg-opacity-50 focus:border-blue-500" 
+              type="number"
+              placeholder="Enter Phone No"
+              required
+              name='phone'
+            />
+          </div>
+        </div>
         {/* Phone and Email */}
         <div className="flex flex-wrap mb-6 w-full max-w-lg">
           <div className="w-full lg:w-1/2 px-3 mb-6 lg:mb-0">
@@ -41,10 +51,10 @@ const Form = () => {
           <div className="w-full lg:w-1/2 px-3">
             <input 
               className="appearance-none block w-full text-white bg-white bg-opacity-25 border border-light-blue-600 rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:bg-opacity-50 focus:border-blue-500" 
-              type="number"
-              placeholder="Enter Phone No"
+              type="text"
+              placeholder="Subject"
               required
-              name='phone'
+              name='subject'
             />
           </div>
         </div>
@@ -53,7 +63,7 @@ const Form = () => {
           <textarea 
             id="message" 
             rows="4" 
-            className="block w-full p-2 text-sm text-white bg-white bg-opacity-25 rounded-lg border border-light-blue-600 focus:ring-blue-500 focus:outline-none focus:border-blue-500 focus:bg-white focus:bg-opacity-50" 
+            className="appearance-none block w-full text-white bg-white bg-opacity-25 border border-light-blue-600 rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:bg-opacity-50 focus:border-blue-500" 
             placeholder="Leave a Message..." 
             required
             name='message'
