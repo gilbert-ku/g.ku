@@ -40,9 +40,20 @@ const Projects = () => {
         </div>
 
         {/* projects blue eye insurance */}
-        <div className="md:flex mt-12">
+        <div className="md:flex mt-3 md:mt-12">
 
-          <div className='md:ml-5 lg:ml-10 my-auto md:pr-5 lg:pr-3'>
+          {/* responsive */}
+
+          <Image
+          src="/blueinsu.png"
+          width={500}
+          height={300}
+          alt="blue eye insurance"
+          loading="lazy"
+          className="w-full md:w-1/2 md:hidden block"
+          />
+
+          <div className='md:ml-5 lg:ml-0 my-auto md:pr-5 lg:pr-3'>
             <h1 className='text-xl md:text-2xl text-light-blue-600 font-semibold mb-2 md:mb-5'>Blue Eye Insurance Agency</h1>
             <p className='md:text-xl lg:text-2xl'>Blue Eye Insurance Agency is a web app for financial advisors that allows them to generate personalized leads, schedule meetings, and share financial content with clients through a blog section.</p>
             <button className='mt-3 md:mt-5 lg:mt-9 p-3 bg-blue-gray-900 w-full md:w-16 h-full md:h-16 rounded-full flex justify-center items-center align-bottom'>
@@ -57,12 +68,12 @@ const Projects = () => {
           height={300}
           alt="blue eye insurance"
           loading="lazy"
-          className="w-full md:w-1/2"
+          className="w-full md:w-1/2 hidden md:block"
           />
         </div>
         
         {/* estateease web app */}
-        <div className="md:flex mt-12">
+        <div className="md:flex mt-3 md:mt-12">
           <Image
           src="/estateweb.png"
           width={500}
@@ -83,9 +94,20 @@ const Projects = () => {
         </div>
 
         {/* projects blue eye insurance */}
-        <div className="md:flex mt-12">
+        <div className="md:flex mt-3 md:mt-12">
 
-          <div className='md:ml-5 lg:ml-10 my-auto md:pr-5 lg:pr-3'>
+          {/* responsive image */}
+
+          <Image
+          src="/stigma.png"
+          width={500}
+          height={300}
+          alt="stigma support"
+          loading="lazy"
+          className="w-full md:w-1/2 md:hidden block"
+          />
+
+          <div className='md:ml-5 lg:ml-0 my-auto md:pr-5 lg:pr-3'>
             <h1 className='text-xl md:text-2xl text-light-blue-600 font-semibold mb-2 md:mb-5'>HIV/AIDS Stigma Support Group</h1>
             <p className='md:text-xl lg:text-2xl'>Together, we can end the stigma! We envision a world where no one faces discrimination for having HIV/AIDS. We aim to foster compassion and understanding by sharing stories and raising voices. Join us in creating a stigma-free world.</p>
             <button className='mt-3 md:mt-5 lg:mt-9 p-3 bg-blue-gray-900 w-full md:w-16 h-full md:h-16 rounded-full flex justify-center items-center align-bottom'>
@@ -95,12 +117,12 @@ const Projects = () => {
           </div>
 
           <Image
-          src="/blueinsu.png"
+          src="/stigma.png"
           width={500}
           height={300}
-          alt="blue eye insurance"
+          alt="stigma support"
           loading="lazy"
-          className="w-full md:w-1/2"
+          className="w-full md:w-1/2 hidden md:block"
           />
         </div>
         
