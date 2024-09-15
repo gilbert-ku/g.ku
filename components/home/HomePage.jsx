@@ -46,7 +46,7 @@ const HomePage = () => {
             className="px-5 md:px-0 md:mx-auto mt-24 md:my-4"
             
           />
-          <h1 className="text-2xl md:text-5xl lg:text-8xl text-white font-extrabold mx-auto mt-7">
+          <h1 className="text-2xl md:text-5xl lg:text-6xl text-white font-extrabold mx-auto mt-7">
             Gilbert Kutoto
           </h1>
 
