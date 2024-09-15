@@ -5,7 +5,7 @@ import { IoCloudDoneSharp } from "react-icons/io5";
 const About = () => {
   return (
     <>
-        <section className='flex justify-center items-center  md:mt-0 md:mb-24'>
+        <section className='flex justify-center items-center mt-2 md:mt-0 md:mb-24'>
             <div className=' lg:flex  justify-evenly' id='About'>
 
                 {/* image */}
@@ -20,7 +20,7 @@ const About = () => {
 
                 {/* content div */}
                 <div className=' text-white lg:w-1/2 mx-5 lg:pl-20 my-auto '>
-                    <h1 className='text-xl md:text-5xl font-semibold text-center lg:text-start md:my-5'>About Me</h1>
+                    <h1 className='text-2xl md:text-5xl font-semibold text-center lg:text-start md:my-5'>About Me</h1>
                     <p className='text-xl text-center md:text-left md:text-3xl font-semibold'>
                         Self <span className='text-light-blue-400'>Driven, Innovative</span> 
                         <br />
@@ -28,7 +28,7 @@ const About = () => {
                     </p>
                     <div className=' text-white pt-4 md:text-xl'>
                         <p >
-                        I have more than one year of experience in software development and solutions. 
+                        I have more than two year of experience in software development and solutions. 
                         I am passionate about software development, always eager to learn new concepts, 
                         and possess a collaborative spirit, 
                         with a focus on detail and leadership in developing solutions that meet organizational and personal objectives.
