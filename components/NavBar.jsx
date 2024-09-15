@@ -31,7 +31,7 @@ import {
         as="li"
         variant="small"
         color="white"
-        className="p-3 font-semibold text-xl  active:bg-blue-gray-500  rounded-3xl"
+        className="p-3 font-semibold md:text-xl  active:bg-blue-gray-500  rounded-3xl"
       >
         <Link href="/" className="flex items-center">
           Home
@@ -41,7 +41,7 @@ import {
         as="li"
         variant="small"
         color="white"
-        className="p-3 font-semibold text-xl active:bg-blue-gray-500  rounded-3xl"
+        className="p-3 font-semibold md:text-xl active:bg-blue-gray-500  rounded-3xl"
       >
         <ScrollLink to="About" 
         spy={true}
@@ -57,7 +57,7 @@ import {
         as="li"
         variant="small"
         color="white"
-        className="p-1 font-semibold text-xl"
+        className="p-1 font-semibold md:text-xl"
       >
         <ScrollLink 
           to="Skills" 
@@ -74,7 +74,7 @@ import {
         as="li"
         variant="small"
         color="white"
-        className="p-1 font-semibold text-xl"
+        className="p-1 font-semibold md:text-xl"
       >
         <ScrollLink 
           to="Services" 
@@ -90,7 +90,7 @@ import {
         as="li"
         variant="small"
         color="white"
-        className="p-1 font-semibold text-xl"
+        className="p-1 font-semibold md:text-xl"
       >
         <ScrollLink 
           to="Projects" 
@@ -107,7 +107,7 @@ import {
         as="li"
         variant="small"
         color="white"
-        className="p-1 font-semibold text-xl"
+        className="p-1 font-semibold md:text-xl"
       >
         <Link href="blogs" className="flex items-center">
           Blogs
@@ -131,7 +131,7 @@ import {
             height={50}
             alt="gilbert logo"
             />
-            <span className="my-auto text-xl font-bold">g <span style={{color: "#57C1FD"}}>.ku</span></span>
+            <span className="my-auto md:text-xl font-bold">g <span style={{color: "#57C1FD"}}>.ku</span></span>
             {/* Material Tailwind */}
           </Typography>
           <div className="flex items-center justify-center gap-4">
