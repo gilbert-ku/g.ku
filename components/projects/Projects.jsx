@@ -81,12 +81,33 @@ const Projects = () => {
               </button>
             </div>
         </div>
+
+        {/* projects blue eye insurance */}
+        <div className="md:flex mt-12">
+
+          <div className='md:ml-5 lg:ml-10 my-auto md:pr-5 lg:pr-3'>
+            <h1 className='text-xl md:text-2xl text-light-blue-600 font-semibold mb-2 md:mb-5'>HIV/AIDS Stigma Support Group</h1>
+            <p className='md:text-xl lg:text-2xl'>Together, we can end the stigma! We envision a world where no one faces discrimination for having HIV/AIDS. We aim to foster compassion and understanding by sharing stories and raising voices. Join us in creating a stigma-free world.</p>
+            <button className='mt-3 md:mt-5 lg:mt-9 p-3 bg-blue-gray-900 w-full md:w-16 h-full md:h-16 rounded-full flex justify-center items-center align-bottom'>
+              {/* <h1 className='pr-4 my-auto font-serif font-bold text-xl text-light-blue-600 md:hidden'>go live</h1> */}
+              <Link href="https://stigmasupport.onrender.com/" target='_blank' className='text-light-blue-600 text-xl md:text-2xl font-semibold md:font-bold flex'> <h1 className='pr-4 my-auto font-serif font-bold text-xl text-light-blue-600 md:hidden'>go live</h1><FaExternalLinkAlt /></Link>
+            </button>
+          </div>
+
+          <Image
+          src="/blueinsu.png"
+          width={500}
+          height={300}
+          alt="blue eye insurance"
+          loading="lazy"
+          className="w-full md:w-1/2"
+          />
+        </div>
         
-        <div className='my-5 flex justify-center items-center'>
+        <div className='my-5 flex justify-center items-center md:mt-10'>
           <Link href="projects">
           <button className=" p-2 rounded-md font-semibold my-3 nd:my-5 px-5 bg-gradient-to-r from-cyan-300 to-light-blue-600 flex">View More Projects <MdNavigateNext className='my-auto font-extrabold'/></button>
           </Link>
-          
         </div>
       </div>
     </>
