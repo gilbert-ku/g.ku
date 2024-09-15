@@ -43,7 +43,7 @@ const HomePage = () => {
             width={400}
             loading="lazy"
             alt="Gilbert Kutoto"
-            className="px-5 md:px-0 md:mx-auto mt-24 md:my-4"
+            className="px-5 md:px-0 md:mx-auto mt-2 md:mt-24 md:my-4"
             
           />
           <h1 className="text-2xl md:text-5xl lg:text-6xl text-white font-extrabold mx-auto mt-7">
