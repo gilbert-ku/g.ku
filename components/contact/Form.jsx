@@ -106,7 +106,7 @@ const Form = () => {
             <input
               className="appearance-none block w-full text-white bg-white bg-opacity-25 border border-light-blue-600 rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:bg-opacity-50 focus:border-blue-500"
               type="tel"
-              placeholder="Enter Phone No"
+              placeholder="Enter Phone No (+254)"
               required
               name='phone'
               aria-label="Phone Number"

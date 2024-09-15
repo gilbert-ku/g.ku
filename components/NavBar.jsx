@@ -46,7 +46,7 @@ import {
         <ScrollLink to="About" 
         spy={true}
         smooth={true}
-        offset={50}
+        offset={-90}
         duration={500}
         className="flex items-center">
           About 
@@ -63,7 +63,7 @@ import {
           to="Skills" 
           spy={true}
           smooth={true}
-          offset={50}
+          offset={-90}
           duration={500}
           className="flex items-center">
           Skills
@@ -80,7 +80,7 @@ import {
           to="Services" 
           spy={true}
           smooth={true}
-          offset={50}
+          offset={-90}
           duration={500}
         className="flex items-center">
           Services
@@ -96,7 +96,7 @@ import {
           to="Projects" 
           spy={true}
           smooth={true}
-          offset={50}
+          offset={-90}
           duration={500}
           className="flex items-center">
           Projects
@@ -196,8 +196,7 @@ import {
                 </Button>
               </ScrollLink>
         </div>
-
-         
+        
         <Collapse open={openNav}>
           {navList}
           <div className="flex items-center gap-x-1">
