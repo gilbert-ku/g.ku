@@ -4,7 +4,7 @@ const HomePage = dynamic(() => import("@/components/home/HomePage"));
 const About = dynamic(() => import("@/components/about/About"));
 const Skills = dynamic(() => import("@/components/skills/Skills"));
 const ServicesOffered = dynamic(() => import("@/components/servicesOffered/Services"));
-// const Projects = dynamic(() => import("@/components/projects/Projects"));
+const Projects = dynamic(() => import("@/components/projects/Projects"));
 const ContactMe = dynamic(() => import("@/components/contact/ContactMe"));
 
 
@@ -17,7 +17,7 @@ const Home= () => {
       <About />
       <Skills />
       <ServicesOffered />
-      {/* <Projects /> */}
+      <Projects />
       <ContactMe />
      
     </>

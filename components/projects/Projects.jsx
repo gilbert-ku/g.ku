@@ -1,7 +1,8 @@
 
 
-import ProjectsLists  from './ProjectsLists'
+// import ProjectsLists  from './ProjectsLists'
 import { MdNavigateNext } from "react-icons/md";
+import Link from "next/link";
 
 const Projects = () => {
   return (
@@ -12,9 +13,12 @@ const Projects = () => {
           <br />
           Explore My Popular <span className='text-light-blue-600 '>Projects</span>
         </h1>
-        <ProjectsLists />
+        {/* <ProjectsLists /> */}
         <div className='my-5 flex justify-center items-center'>
+          <Link href="projects">
           <button className=" p-2 rounded-md font-semibold my-3 nd:my-5 px-5 bg-gradient-to-r from-cyan-300 to-light-blue-600 flex">View More Projects <MdNavigateNext className='my-auto font-extrabold'/></button>
+          </Link>
+          
         </div>
       </div>
     </>
