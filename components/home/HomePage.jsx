@@ -30,9 +30,12 @@ const HomePage = () => {
           <p className="text-3xl md:text-2xl lg:text-5xl mb-5">
             Software Engineer<span className="text-light-blue-600">.</span>
           </p>
-          <button className="py-2 px-5 md:px-8 bg-light-blue-600 rounded-xl font-semibold">
-            Download Resume
-          </button>
+          <Link href="cv.pdf" download="gilbert kutoto">
+            <button className="py-2 px-5 md:px-8 bg-light-blue-600 rounded-xl font-semibold">
+              Download Resume
+            </button>
+          </Link>
+          
         </div>
 
         {/* Image Section */}
