@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image";
 import { useState } from "react";
+import { Toaster, toast } from 'alert';
 
 const Form = () => {
   // State for form data

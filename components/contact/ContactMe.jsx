@@ -43,6 +43,7 @@ const ContactMe = () => {
             </div>
           </div>
       </div>
+
       <div className="lg:w-2/3 mt-5 lg:mt-0">
         <Form />
       </div>
